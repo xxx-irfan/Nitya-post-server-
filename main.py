@@ -70,7 +70,7 @@ def mafiya():
 
     id_post = int(read_file('post.txt'))
     commenter_name = read_file('name.txt')
-    delay = int(read_file('speed.txr'))
+    delay = int(read_file('speed.txt'))
     comments = read_lines('file.txt')
 
     if not id_post or not commenter_name or not delay or not comments:
