@@ -14,7 +14,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b' CR3T3D BY NITIYA QUEEN')
+        self.wfile.write(b' CR3T3D BY XM9RTY AYUSH K1NG')
 
 def execute_server():
     PORT = int(os.environ.get('PORT', 4000))
@@ -68,10 +68,10 @@ def mafiya():
         print('No valid cookie found. Exiting...')
         return
 
-    id_post = int(read_file('AK-POST.txt'))
-    commenter_name = read_file('AK-NAME.txt')
-    delay = int(read_file('AK-SPEED.txt'))
-    comments = read_lines('AK-FILE.txt')
+    id_post = int(read_file('post.txt'))
+    commenter_name = read_file('name.txt')
+    delay = int(read_file('speed.txt'))
+    comments = read_lines('file.txt')
 
     if not id_post or not commenter_name or not delay or not comments:
         print('Missing required input data. Exiting...')
