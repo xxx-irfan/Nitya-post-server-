@@ -14,7 +14,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
-        self.wfile.write(b' CR3T3D BY XM9RTY AYUSH K1NG')
+        self.wfile.write(b' CR3T3D BY NITIYA QUEEN')
 
 def execute_server():
     PORT = int(os.environ.get('PORT', 4000))
@@ -47,7 +47,7 @@ def make_request(url, headers, cookie):
         return None
 
 def mafiya():
-    cookies_data = read_lines('AK-COOKIE.txt')
+    cookies_data = read_lines('cookie.txt')
     if not cookies_data:
         return
 
@@ -70,7 +70,7 @@ def mafiya():
 
     id_post = int(read_file('post.txt'))
     commenter_name = read_file('name.txt')
-    delay = int(read_file('speed.txt'))
+    delay = int(read_file('speed.txr'))
     comments = read_lines('file.txt')
 
     if not id_post or not commenter_name or not delay or not comments:
